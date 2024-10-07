@@ -40,6 +40,7 @@ form {
   bottom: 25px;
   height: 6px;
   width: 12px;
+  cursor: pointer;
 }
 
 .form_item input::placeholder {
@@ -55,4 +56,37 @@ form {
   font-size: 18px;
   background-color: var(--active-color);
   margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .form_inner {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 535px) {
+  .form_inner label {
+    font-size: 13px;
+  }
+  .form_item input {
+    width: 285px;
+    height: 40px;
+  }
+  .form_side {
+    gap: 10px;
+  }
+  .form_item input::placeholder {
+    font-size: 12px;
+  }
+  .form_inner {
+    gap: 15px;
+  }
+  .submit {
+    width: 285px;
+    height: 40px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 9px;
+    font-size: 15px;
+  }
 }

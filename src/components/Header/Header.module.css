@@ -2,6 +2,23 @@ header {
   color: var(--header-color);
 }
 
+.search_mobile {
+  display: none;
+}
+
+.burger {
+  display: none;
+  width: 60px;
+  height: 20px;
+}
+
+.burger span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #343c6a;
+}
+
 .logo_wrapper {
   display: flex;
   align-items: center;
@@ -17,6 +34,7 @@ header {
   max-width: 1356px;
   padding: 18px 43px;
   display: flex;
+  align-items: center;
   gap: 5%;
 }
 
@@ -46,13 +64,34 @@ header {
   border-radius: 40px;
 }
 
+.search_mobile {
+  display: none;
+  position: relative;
+  background-color: var(--main-color);
+  width: 325px;
+  height: 40px;
+  margin: auto;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
 .search img {
   position: absolute;
   left: 20px;
   top: 17px;
+  cursor: pointer;
 }
 
-.search input {
+.search_mobile img {
+  position: absolute;
+  left: 20px;
+  width: 15px;
+}
+
+.search input,
+.search_mobile input {
   background-color: var(--main-color);
   border: none;
 }
@@ -63,12 +102,17 @@ input::placeholder {
   line-height: 18.15px;
 }
 
+input:focus {
+  outline: var(--main-color);
+}
+
 .settings,
 .notification {
   width: 50px;
   height: 50px;
   background-color: var(--main-color);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .settings img,
@@ -78,6 +122,68 @@ input::placeholder {
   padding: 12px;
 }
 
+.ava_mobile {
+  display: none;
+}
+
 .ava img {
+  cursor: pointer;
   width: 60px;
+}
+
+@media (max-width: 920px) {
+  .settings,
+  .notification,
+  .logo_wrapper {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 580px) {
+  .content {
+    flex-wrap: wrap;
+  }
+  .ava {
+    display: none;
+  }
+}
+
+@media (max-width: 535px) {
+  .ava_mobile {
+    display: inline;
+  }
+  .wrapper {
+    padding: 25px 25px 20px 25px;
+    gap: 30%;
+  }
+  .burger {
+    height: 15px;
+  }
+  .burger span {
+    width: 20px;
+  }
+
+  .content p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+  }
+  .ava_mobile {
+    width: 35px;
+    height: 35px;
+  }
+
+  .account {
+    display: none;
+  }
+
+  .search_mobile {
+    display: flex;
+  }
 }

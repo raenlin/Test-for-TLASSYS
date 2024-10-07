@@ -4,6 +4,11 @@ function Header() {
   return (
     <header>
       <div className={styles.wrapper}>
+        <div className={styles.burger}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div className={styles.logo_wrapper}>
           <img
             className={styles.logo}
@@ -14,6 +19,11 @@ function Header() {
         </div>
         <div className={styles.content}>
           <p>Setting</p>
+          <img
+            className={styles.ava_mobile}
+            src="../../src/assets/ava.png"
+            alt="Avatar"
+          />
           <div className={styles.account}>
             <div className={styles.search}>
               <img src="../../src/assets/search.png" alt="Search" />
@@ -30,6 +40,10 @@ function Header() {
             </div>
           </div>
         </div>
+      </div>
+      <div className={styles.search_mobile}>
+        <img src="../../src/assets/search.png" alt="Search" />
+        <input type="text" placeholder="Search for something" />
       </div>
     </header>
   );

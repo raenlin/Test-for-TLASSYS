@@ -13,7 +13,7 @@ function Profile() {
         <div className={styles.content}>
           <img
             className={styles.avatar}
-            src="../../src/assets/ava_large.png"
+            src="../../src/assets/ava.jpg"
             alt="Avatar"
           />
           <div className={styles.form_wrapper}>
