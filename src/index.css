@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --header-color: #343c6a;
+  --main-color: #f5f7fa;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,15 +25,14 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 31.95px;
 }
 
 button {
@@ -65,4 +65,8 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+input {
+  border: none;
 }
