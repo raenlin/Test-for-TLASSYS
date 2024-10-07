@@ -1,0 +1,42 @@
+.wrapper {
+  padding: 30px 40px;
+  padding-bottom: 176px;
+  background-color: var(--main-color);
+}
+
+.profile_inner {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.profile_inner a {
+  color: #8ba3cb;
+}
+
+.profile_nav {
+  padding: 5px 10px 10px 10px;
+  max-width: 1050px;
+  display: flex;
+  gap: 80px;
+  border-bottom: 1px solid #f4f5f7;
+}
+
+.profile_nav a:first-child {
+  border-bottom: 2px solid var(--active-color);
+}
+
+.profile_nav a:first-child {
+  color: var(--active-color);
+}
+
+.content {
+  display: flex;
+  gap: 55px;
+  margin-top: 45px;
+}
+
+.avatar {
+  width: 130px;
+  height: 132px;
+}

@@ -54,6 +54,7 @@ header {
 
 .search input {
   background-color: var(--main-color);
+  border: none;
 }
 
 input::placeholder {
