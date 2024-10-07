@@ -10,39 +10,31 @@ function Header() {
           <span></span>
         </div>
         <div className={styles.logo_wrapper}>
-          <img
-            className={styles.logo}
-            src="../../src/assets/logo.png"
-            alt="Logo"
-          />
+          <img className={styles.logo} src="/logo.png" alt="Logo" />
           <h1>BankDash.</h1>
         </div>
         <div className={styles.content}>
           <p>Setting</p>
-          <img
-            className={styles.ava_mobile}
-            src="../../src/assets/ava.png"
-            alt="Avatar"
-          />
+          <img className={styles.ava_mobile} src="/ava.png" alt="Avatar" />
           <div className={styles.account}>
             <div className={styles.search}>
-              <img src="../../src/assets/search.png" alt="Search" />
+              <img src="/search.png" alt="Search" />
               <input type="text" placeholder="Search for something" />
             </div>
             <div className={styles.settings}>
-              <img src="../../src/assets/settings.png" alt="Settings" />
+              <img src="/settings.png" alt="Settings" />
             </div>
             <div className={styles.notification}>
-              <img src="../../src/assets/notification.png" alt="Notification" />
+              <img src="/notification.png" alt="Notification" />
             </div>
             <div className={styles.ava}>
-              <img src="../../src/assets/ava.png" alt="Avatar" />
+              <img src="/ava.png" alt="Avatar" />
             </div>
           </div>
         </div>
       </div>
       <div className={styles.search_mobile}>
-        <img src="../../src/assets/search.png" alt="Search" />
+        <img src="/search.png" alt="Search" />
         <input type="text" placeholder="Search for something" />
       </div>
     </header>

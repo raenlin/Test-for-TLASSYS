@@ -11,11 +11,7 @@ function Profile() {
           <a href="#">Security</a>
         </nav>
         <div className={styles.content}>
-          <img
-            className={styles.avatar}
-            src="../../src/assets/ava.jpg"
-            alt="Avatar"
-          />
+          <img className={styles.avatar} src="/ava.jpg" alt="Avatar" />
           <div className={styles.form_wrapper}>
             <Form />
           </div>

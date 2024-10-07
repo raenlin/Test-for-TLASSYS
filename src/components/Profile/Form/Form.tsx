@@ -31,11 +31,7 @@ function Form() {
               name="birth"
               placeholder="25 January 1990"
             />
-            <img
-              className={styles.mark}
-              src="../../src/assets/mark.png"
-              alt="Check"
-            />
+            <img className={styles.mark} src="mark.png" alt="Check" />
           </div>
           <div className={styles.form_item}>
             <label htmlFor="permanent-address">Permanent Address</label>
