@@ -1,0 +1,18 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: var(--nav-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.78px;
+}
+
+.item img {
+  width: 25px;
+  height: 25px;
+}
+
+.item:last-child {
+  color: var(--active-color);
+}
